@@ -2,9 +2,14 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+)
+
+// this is the only way to initialize outside a func
+var (
+	name string = "santiago"
+	py   bool
 )
 
 func main() {
-	fmt.Println("My favorite number is: ", rand.Intn(10))
+	fmt.Printf("Type: %t String: %q", py, name)
 }
